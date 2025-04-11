@@ -129,7 +129,7 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 4s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
@@ -409,6 +409,21 @@ b, strong {
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -1cm; /* move arrow 1cm to the left */
+}
+
+.owl-next {
+  right: -1cm; /* move arrow 1cm to the right */
 }
 
 .google-map iframe {
